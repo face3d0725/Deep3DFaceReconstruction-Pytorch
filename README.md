@@ -22,3 +22,7 @@ copy 01_MorphableModel.mat to BFM/
 4. Download the pretrained model: https://drive.google.com/file/d/1mTyutx9IubRigwoBMqN7ApFwx6hxq6Mi/view?usp=sharing and put in in ckpt/
 5. run test.py
 
+# Results
+(results/show1.png)
+
+(results/show2.png)
