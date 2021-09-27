@@ -23,6 +23,6 @@ copy 01_MorphableModel.mat to BFM/
 5. run test.py
 
 # Results
-(results/show1.png)
+![](results/show1.png)
 
-(results/show2.png)
+![](results/show2.png)
