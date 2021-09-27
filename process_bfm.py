@@ -121,7 +121,7 @@ def transferBFM09():
            'keypoints': keypoints, 'frontmask': frontmask,
            'skinmask': skinmask, 'uv_stretch': uv, 'tri_mouth': tri_mouth}
 
-    savemat('BFM_model_front_uv_stretch.mat', mat)
+    savemat('BFM/BFM_model_front_uv_stretch.mat', mat)
 
 if __name__ == '__main__':
     transferBFM09()
