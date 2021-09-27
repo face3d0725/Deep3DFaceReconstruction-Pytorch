@@ -2,9 +2,16 @@
 Pretrained model of Deep3DFaceReconstruction(Pytorch version), one modification is that, the input face image is 256x256, rather than the original 224x224. Since it's also used in my other projects. 
 
 Original tensorflow version: https://github.com/microsoft/Deep3DFaceReconstruction
-
 Another Pytorch version: https://github.com/sicxu/Deep3DFaceRecon_pytorch 
 
+# Requirements
+* Python >= 3.7
+* Pytorch >= 1.6
+* cv2
+* numpy
+* PyTorch3D : https://pytorch3d.org/
+
+# Usage 
 
 0. For beginners, you'd better study this project first: https://github.com/YadiraF/face3d , since the UV coordinates, the tri_mouth is derived from this project (not necessary, just an advice, I have already put all the models needed, except the original BFM model, due to the copyright issues)
 
