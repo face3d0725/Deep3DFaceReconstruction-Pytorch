@@ -1,5 +1,5 @@
 # Deep3DFaceReconstruction-Pytorch
-Pretrained model of Deep3DFaceReconstruction(Pytorch version)
+Pretrained model of Deep3DFaceReconstruction(Pytorch version), a modification is that, the input face image is 256x256, rather than the original 224x224
 
 Original tensorflow version: https://github.com/microsoft/Deep3DFaceReconstruction
 
