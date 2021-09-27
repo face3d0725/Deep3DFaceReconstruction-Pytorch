@@ -12,5 +12,6 @@ Another Pytorch version: https://github.com/sicxu/Deep3DFaceRecon_pytorch
 copy 01_MorphableModel.mat to BFM/
 2. Download Exp_Pca.bin from this link: https://github.com/Juyong/3DFace and save it to BFM/
 3. Run process_bfm.py
-
+4. Download the pretrained model: https://drive.google.com/file/d/1mTyutx9IubRigwoBMqN7ApFwx6hxq6Mi/view?usp=sharing and put in in ckpt/
+5. run test.py
 
