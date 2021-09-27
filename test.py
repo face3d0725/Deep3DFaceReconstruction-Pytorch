@@ -9,8 +9,8 @@ import numpy as np
 import os
 import pickle
 
-root_img = '/media/xn/1TDisk/ffhq/images1024x1024'
-root_ldmk = '/media/xn/SSD1T/ffhq/ldmk_init'
+root_img = './test_data/img/'
+root_ldmk = './test_data/ldmk/'
 img_lst = os.listdir(root_img)
 
 
