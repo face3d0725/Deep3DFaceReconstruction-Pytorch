@@ -65,12 +65,12 @@ class SimpleRenderer(nn.Module, ABC):
             pixel_coords = interpolate_face_attributes(pix_to_face, bary_coords, faces_verts)  # to calc light direction
             direction = light_loc - pixel_coords
         else:
-            direction = light_direction(random=random, device=self.device)
+            direction = light_direction(random=random, device=verts.device)
 
         direction = F.normalize(direction, p=2, dim=-1, eps=1e-6)
 
         # color of the light
-        color = torch.tensor([1.0, 1.0, 1.0]).to(self.device)
+        color = torch.tensor([1.0, 1.0, 1.0]).to(verts.device)
 
         normals = -F.normalize(pixel_normals, p=2, dim=-1, eps=1e-6)
 
@@ -80,7 +80,7 @@ class SimpleRenderer(nn.Module, ABC):
 
         # specular
         if specular:
-            camera_position = torch.tensor([[0., 0., -1000.]], dtype=torch.float32).to(self.device)
+            camera_position = torch.tensor([[0., 0., -1000.]], dtype=torch.float32).to(verts.device)
             mask = (cos_angle > 0).type(torch.float32)
             reflect_direction = -direction + 2 * (cos_angle[..., None] * normals)
             if pixel_coords is None:
@@ -125,7 +125,7 @@ class SimpleRenderer(nn.Module, ABC):
             cv2.erode(m.detach().squeeze().cpu().numpy().astype('uint8'), mask_kernel, iterations=1)).type(
             torch.float32)
         masks = list(map(erode, masks))
-        batch_mask_ero = torch.stack(masks, dim=0).to(self.device)
+        batch_mask_ero = torch.stack(masks, dim=0).to(batch_mask.device)
         return batch_mask_ero
 
     @staticmethod
