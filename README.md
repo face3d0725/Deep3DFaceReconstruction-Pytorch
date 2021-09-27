@@ -1,6 +1,8 @@
 # Deep3DFaceReconstruction-Pytorch
 Pretrained model of Deep3DFaceReconstruction(Pytorch version)
+
 Original tensorflow version: https://github.com/microsoft/Deep3DFaceReconstruction
+
 Another Pytorch version: https://github.com/sicxu/Deep3DFaceRecon_pytorch 
 
 
