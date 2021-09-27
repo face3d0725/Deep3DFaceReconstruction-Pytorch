@@ -119,7 +119,7 @@ def transferBFM09():
            'idBase': idBase, 'exBase': exBase,
            'texBase': texBase, 'tri': tri,
            'keypoints': keypoints, 'frontmask': frontmask,
-           'skinmask': skinmask, 'uv': uv, 'tri_mouth': tri_mouth}
+           'skinmask': skinmask, 'uv_stretch': uv, 'tri_mouth': tri_mouth}
 
     savemat('BFM_model_front_uv_stretch.mat', mat)
 
